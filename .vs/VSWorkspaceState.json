@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\MicroserverTrucks",
+    "\\src\\MicroserverTrucks\\Api",
+    "\\src\\MicroserverTrucks\\Api\\apitruck",
+    "\\src\\MicroserverTrucks\\Api\\apitruck\\Properties"
+  ],
+  "SelectedNode": "\\src\\MicroserverTrucks\\Api\\apitruck\\apitruck.csproj",
+  "PreviewInSolutionExplorer": false
+}

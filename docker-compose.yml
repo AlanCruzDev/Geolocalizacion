@@ -1,0 +1,41 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  apicuestomers:
+    image: apicuestomers
+    build:
+      context: .
+      dockerfile: "src/MicroserverAdminCuestomers/Api/apicuestomers/Dockerfile"
+    ports:
+      - "9000:90"
+    depends_on:
+      - "db"
+    links:
+      - db
+    environment:
+      - DBServer = "db"
+    networks:
+      - redNet
+       
+  db:
+    container_name: sqlserver2019
+    image: "mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04"
+    user: "0:0"
+    restart: always
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Alancruz1998."
+      MSSQL_PID: Express
+    volumes:
+      - sqldata:/var/opt/mssql
+    networks:
+      - redNet
+volumes:
+  sqldata:
+networks:
+  redNet:
+    driver: bridge
