@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="cards__assign mt-4">
+      <div class="card__assign">
+        <div class="card__header">
+          <i class="fa-solid fa-car"></i>
+        </div>
+        <div class="card__body">
+          <h6 [routerLink]="['mapa']">
+            Asignar Paquetes</h6>
+        </div>
+      </div>
+      <div class="card__assign">
+        <div class="card__header">
+          <i class="fa-solid fa-clipboard-list"></i>
+        </div>
+        <div class="card__body">
+          <h6
+            [routerLink]="['list/package']"
+          >Listado de Paquetes</h6>
+        </div>
+      </div>
+      <div class="card__assign">
+        <div class="card__header">
+          <i class="fa-solid fa-box"></i>
+        </div>
+        <div class="card__body">
+          <h6>Paquetes Entregados</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 p-3">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
+

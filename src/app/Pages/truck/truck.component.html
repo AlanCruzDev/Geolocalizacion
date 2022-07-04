@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="cards__assign mt-4">
+      <div class="card__assign">
+        <div class="card__header">
+          <i class="fa-solid fa-person"></i>
+        </div>
+        <div class="card__body">
+          <h6 [routerLink]="['new/inchage']">
+            Registro de Encargado</h6>
+        </div>
+      </div>
+      <div class="card__assign">
+        <div class="card__header">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div class="card__body">
+          <h6
+            [routerLink]="['new/truck']"
+          >Registro de Transporte</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 p-3">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
+

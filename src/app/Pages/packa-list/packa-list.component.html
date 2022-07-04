@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mt-lg-5">
+      <table class="table table-responsive">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Origen Paquete</th>
+            <th scope="col">Destino Paquete</th>
+            <th scope="col">Sub Total</th>
+            <th scope="col">Total</th>
+            <th scope="col">Numero de Ruta</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr *ngFor="let item of _package">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.origenPaquete}}</td>
+            <td>{{item.destinoPaquete}}</td>
+            <td>{{item.subtotalPaquete}}</td>
+            
+            <td>{{item.totalPaquete}}</td>
+            <td>{{item.idRuta}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</div>

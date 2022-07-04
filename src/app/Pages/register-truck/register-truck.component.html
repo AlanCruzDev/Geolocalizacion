@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+        <h4 class="text-center">Registro Transporte</h4>
+    </div>
+    <div class="card-body">
+      <form class="row g-3"  [formGroup]="fmGrupo" (ngSubmit)="savePackage()">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Placa</label>
+          <input type="text" class="form-control"  formControlName="txtplaca">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Serie</label>
+          <input type="text" class="form-control" formControlName="txtserie">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Color</label>
+          <input type="text" class="form-control" formControlName="txtcolor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Marca</label>
+          <input type="text" class="form-control" formControlName="txtmarca">
+        </div>     
+
+        <div class="col-md-6">
+          <label for="fechaentrega" class="form-label">Modelo</label>
+          <input type="text" class="form-control" formControlName="txtmodelo">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Plazas</label>
+          <input type="number" class="form-control"  formControlName="txtplazas">
+        </div>
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">Tipo de Transporte</label>
+          <select id="inputState" class="form-select"  formControlName="idtypetransport">
+            <option
+            *ngFor="let item of _type"
+            [value]="item.id"
+            >{{item.nametype}}</option>
+          </select> 
+        </div>
+        <div class="text-center mt-5">
+          <button class="btn btn-outline-info w-50">Guardar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

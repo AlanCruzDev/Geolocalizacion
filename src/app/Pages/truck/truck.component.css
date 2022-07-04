@@ -1,0 +1,37 @@
+.cards__assign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; 
+  
+}
+
+.card__assign{
+  background-color: #8EA8C3;
+  width: 330px;
+  height: 150px;
+  border-radius: 10px;
+}
+.card__header{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 15px;
+}
+.card__header i{
+  font-size: 50px;
+  color: white;
+}
+.card__body{
+  margin-top: 20px;
+  text-align: center;
+}
+.card__body h6{
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card__body h6:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header bg-info">
+
+      </div>
+      <div class="card-body">
+        <form class="row g-3" [formGroup]="fmGrupo" (ngSubmit)="savePackage()">
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Numero de Paquete</label>
+            <select id="inputState" class="form-select" (change)="onChange($event)">
+              <option
+              [value]="item.id"
+              *ngFor="let item of _numberpackages"
+              >{{item.id}}</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Numero de Ruta</label>
+            <input type="text" class="form-control" id="inputCity" formControlName="nameroute">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Origen Paquete</label>
+            <input type="text" class="form-control" id="inputCity" formControlName="originpackage">
+          </div> 
+          
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Destino Paquete</label>
+            <input type="text" class="form-control" id="inputCity" formControlName="destinypackage">
+          </div>
+          <h4 class="text-center">Selecion de Transporte</h4>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Tipo de Transporte</label>
+            <select id="inputState" class="form-select" (change)="OnChange($event)" formControlName="idtypetransport">
+              <option
+              *ngFor="let item of _type"
+              [value]="item.id"
+              >{{item.nametype}}</option>
+            </select> 
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Disponibilidad</label>
+            <select id="inputState" class="form-select" formControlName="idtransport">
+              <option
+              *ngFor="let item of _typetransport"
+              [value]="item.id"
+              >{{item.placa}}</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label">Capacidad</label>
+            <input type="text" class="form-control" id="inputCity" formControlName="txtstock"> 
+          </div>
+          <h4 class="text-center">Hora</h4>
+          <div class="col-md-6">
+            <label for="horasalida" class="form-label mt-4">Hora Salida</label>
+              <input type="time" class="form-control" id="txthorasalida">
+          </div>
+          <div class="text-center mt-5">
+            <button type="submit" class="btn btn-info text-white w-50">Guardar</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

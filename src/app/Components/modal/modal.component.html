@@ -1,0 +1,27 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-dark">
+          <h4 class="text-center">Codigo de Verificacion</h4>
+          <div class="alert alert-danger text-center mt-3" role="alert" *ngIf="_mensajecode">
+            Error, Codigo de Verificacion
+          </div>
+          <div class="p-3">
+              <input type="text" placeholder="Codigo" class="form-control" aria-describedby="codehelp" id="codetxt">
+          </div>    
+          <div class="text-center">
+            <button class="btn btn-info" (click)="VerificarCode()">Verificar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

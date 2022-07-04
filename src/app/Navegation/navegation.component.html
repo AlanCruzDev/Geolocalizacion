@@ -1,0 +1,30 @@
+<div class="d-flex" id="wrapper">
+
+  <div class="bg-azul " id="sidebar-wrapper">
+      <div class="sidebar-heading text-light">
+
+          <h4 class="text-light font-weight-bold">Hello World</h4>
+      </div>
+      <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['mapa']"><i class = "icon ion-md-document mr-2"></i>Localizar Paquetes</a>
+          <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['packages']"><i class = "icon ion-md-document mr-2"></i>Nuevo Paquete</a>
+          <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['assign/packages']"><i class = "icon ion-md-document mr-2"></i>Asignar Paquete</a>
+          <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['create']"><i class = "icon ion-md-document mr-2"></i>Registro  Camion</a>
+          <a *ngIf="rol"  class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['create']"><i class = "icon ion-md-document mr-2"></i>Registro Empleado</a>
+          
+          
+          
+          <button class="btn btn-primary w-25" (click)="logout()">Salir</button>
+      </div>
+  </div>
+  <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mr-ml border-bottom">
+          <button class="btn bg-azul p-3 text-light" id="menu-toggle">
+              <i class="fa fa-align-justify fa-lg"></i>
+          </button>
+      </nav>
+      <div class="subir">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>

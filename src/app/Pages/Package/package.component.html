@@ -1,0 +1,105 @@
+<body class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header card__header__package p-lg-4">
+          <h1 class="package__titulo text-center">Nuevo Paquete</h1>
+
+        </div>
+        <div class="card-body">
+          <form class="row" [formGroup]="fmGrupo" (ngSubmit)="savePackage()">
+            <div class="col-md-7">
+              <div class="map__container" #mapDirections>
+                <app-search-bar></app-search-bar>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <label for="fechaentrega" class="form-label mt-4">Usuario de Paquetes</label>
+              <select class="form-select" aria-label="selection package"
+                formControlName="idcuestomers">
+                <option
+                  *ngFor="let item of _cuestomers"
+                  [value]="item.id"
+                >{{item.nameUser}}</option>
+              </select>
+
+
+
+
+              <label for="fechaenvio" class="form-label mt-4">Origen de Paquete</label>
+              <input type="text" class="form-control" id="txtorigin"
+                formControlName="txtorigin">
+
+
+              <label for="fechaenvio" class="form-label mt-4">Destino de Paquete</label>
+              <input type="text" class="form-control" id="txtdestino"
+                formControlName="txtdestino">
+
+              <label for="fechaenvio" class="form-label mt-4">Fecha Envio</label>
+              <input type="date" class="form-control" id="txtfechaenvio"
+                formControlName="txtfechaenvio">
+
+
+              <label for="fechaentrega" class="form-label mt-4">Fecha Entrega</label>
+              <input type="date" class="form-control" id="txtfechaentrega"
+                formControlName="txtfechaentrega">
+
+
+              <label for="fechaentrega" class="form-label mt-4">Codigo de
+                Paquete</label>
+              <input type="text" class="form-control" id="txtcodigopaquete"
+                formControlName="txtcodigopaquete">
+
+
+              <label for="fechaentrega" class="form-label mt-4">Precio</label>
+              <input type="number" class="form-control" id="txtprecio"
+                formControlName="txtprecio">
+
+              <label for="fechaentrega" class="form-label mt-4">Tipo de Paquetes</label>
+              <select class="form-select" aria-label="selection package"
+                formControlName="selectpackage">
+                <option value="domicilio">Domicilio</option>
+                <option value="punto entrega">Envio Punto de Entrega</option>
+                <option value="urgente">Urgente</option>
+                <option value="estandar">Estandar</option>
+                <option value="internacional">Internacional</option>
+              </select>
+              <label for="fechaentrega" class="form-label mt-4">Descripcion</label>
+              <textarea class="form-control" id="validationTextarea"
+                placeholder="Una Breve Descripcion del Paquete"
+                formControlName="txtdescription"></textarea>
+
+              <div class="d-flex align-items-center justify-content-center
+                mt-4">
+                <label for="fechaentrega" class="form-label">SubTotal</label>
+                <input type="number" class="form-control w-auto"id="txtsubtotalpaquete"
+                  formControlName="txtsubtotalpaquete">
+
+
+                <label for="fechaentrega" class="form-label">Iva</label>
+                <input type="number" class="form-control w-auto" id="txtiva"
+                  formControlName="txtiva">
+
+              </div>
+
+              <label for="fechaentrega" class="form-label mt-4">Total a Pagar</label>
+              <input type="number" class="form-control text-center"
+                id="txtprecio" formControlName="txttotalpagar">
+
+
+              <div class="text-center">
+                <button class="btn btn-info w-75 mt-5 text-white">Guadar</button>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>

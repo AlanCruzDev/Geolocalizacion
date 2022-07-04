@@ -1,0 +1,14 @@
+.package__titulo{
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  font-weight: 800;
+}
+.map__container{
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.card__header__package{
+  background-color:#8EA8C3 ;
+}
+

@@ -1,0 +1,19 @@
+<div
+  *ngIf="inLoadingPlaces"
+class="alert alert-primary mt-2 text-center">
+  <h6>Cargando</h6>
+  <span>Espere por favor....</span>
+</div>
+
+<ul class="list-group mt-2" *ngIf="places.length > 0">
+  <li 
+    *ngFor="let place of places"
+    class="list-group-place list-group-item-action pointer"
+    (click)="FlyTo(place)"
+    >
+    <h6>{{place.text_es}}</h6>
+    <p>
+      {{place.place_name}}
+    <button class="btn btn-sm btn-outline-primary" type="button">Direcciones</button>
+  </li>
+</ul>
