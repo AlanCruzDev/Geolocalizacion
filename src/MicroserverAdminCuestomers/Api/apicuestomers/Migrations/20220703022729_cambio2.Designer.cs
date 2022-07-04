@@ -11,8 +11,8 @@ using apicuestomers.Data;
 namespace apicuestomers.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220509011308_initial")]
-    partial class initial
+    [Migration("20220703022729_cambio2")]
+    partial class cambio2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

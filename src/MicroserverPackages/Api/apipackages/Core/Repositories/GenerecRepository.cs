@@ -1,6 +1,7 @@
 using apipackages.Core.IRepositories;
 using apipackages.Data;
 using apipackages.DTO;
+using apipackages.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
@@ -58,6 +59,16 @@ public class GenericRepository<T> : IGenericRepository<T>  where T : class{
   }
 
   public virtual Task<RespuestaAutenticacionDTO> Login(string user, string passworg)
+  {
+    throw new NotImplementedException();
+  }
+
+  public virtual Task<string> RecoveryPassword(putEmployeDTO putEmploye)
+  {
+    throw new NotImplementedException();
+  }
+
+  public virtual Task<string> NewPassword(putEmployeDTO putEmploye)
   {
     throw new NotImplementedException();
   }

@@ -17,6 +17,7 @@ public class AutoMapperProfile:Profile{
 
     //Empleado
     CreateMap<EmployesDTO,Employes>();
+    CreateMap<putEmployeDTO,Employes>();
     
   }
 }

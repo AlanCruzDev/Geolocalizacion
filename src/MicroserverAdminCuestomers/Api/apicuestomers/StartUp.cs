@@ -3,6 +3,8 @@ using System.Text;
 using System.Text.Json.Serialization;
 using apicuestomers.Core.IConfiguration;
 using apicuestomers.Data;
+using apicuestomers.Models;
+using apicuestomers.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -72,6 +74,9 @@ public class StartUp
     });
 
     services.AddScoped<IUnitOfWork, UnitOfWork>();
+    // Servicios del Email
+    services.AddTransient<IEmailSender,EmailSender>();
+    services.Configure<EmailSenderOptions>(Configuration.GetSection("EmailSenderOptions"));
 
   }
 

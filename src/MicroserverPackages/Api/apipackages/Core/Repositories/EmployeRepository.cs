@@ -13,6 +13,10 @@ using Microsoft.IdentityModel.Tokens;
 namespace apipackages.Core.Repositories;
 public class EmployeRepository : GenericRepository<Employes>, IEmploye
 {
+  
+  private string [] _letrar ={"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","w","x","y","z"};
+  private Random _randonw;
+
 
   public EmployeRepository(ApplicationDbContext context, ILogger logger, IDataProtector dataProtector, IMapper mapper) : base(context, logger, dataProtector, mapper)
   {
@@ -60,6 +64,14 @@ public class EmployeRepository : GenericRepository<Employes>, IEmploye
           Expiracion = new DateTime(),
         };
       }
+      if(!userexiste.Activo){
+        return new RespuestaAutenticacionDTO()
+        {
+          Token = "",
+          Expiracion = new DateTime(),
+        };
+      }
+
       return ConstruirToken(userexiste.Id, userexiste.Roles);
 
     }
@@ -95,6 +107,48 @@ public class EmployeRepository : GenericRepository<Employes>, IEmploye
       Rol = rol
     };
 
+  }
+  
+  public override async Task<string> RecoveryPassword(putEmployeDTO putEmploye)
+  {
+    try{      
+      var res = await _context.Employes.FirstOrDefaultAsync(x => x.Usuario.Equals(putEmploye.email));
+      if (res == null){
+        return "False";
+      }
+       string code = GenerateCode();
+       res.CodeVerify= code;
+       return code;
+    }catch(Exception ex){
+      _logger.LogError(ex,"{Repo} Put Actualizar");
+      return "Error";
+    }
+  }
+  public override async Task<string> NewPassword(putEmployeDTO putEmploye)
+  {
+    try{
+      var res = await _context.Employes.FirstOrDefaultAsync(x => x.CodeVerify.Equals(putEmploye.CodeVerify));
+      if (res == null){
+        return "False";
+      }
+      res.CodeVerify = "";
+      res.password = putEmploye.password;
+      return "True";
+    }catch(Exception ex){
+      _logger.LogError(ex,"{Repo} Put Actualizar");
+      return "Error";
+    }
+  }
+
+  private string GenerateCode(){
+    string valor ="";
+    this._randonw = new Random();
+    for(int i=0; i<5;i++){
+      int valornuevo = this._randonw.Next(1,100);
+      int arreglo = this._randonw.Next(1,this._letrar.Length);
+      valor+=""+valornuevo+""+this._letrar[arreglo];
+    }
+    return valor;
   }
 
 }

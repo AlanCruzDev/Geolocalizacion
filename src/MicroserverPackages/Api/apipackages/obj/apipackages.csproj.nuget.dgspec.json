@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj": {}
+    "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj": {
+    "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj",
+        "projectUniqueName": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj",
         "projectName": "apipackages",
-        "projectPath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj",
+        "projectPath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj",
         "packagesPath": "C:\\Users\\Allan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\obj\\",
+        "outputPath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Allan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,7 +62,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

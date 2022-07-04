@@ -5,10 +5,13 @@ using apitruck.Models;
 using Microsoft.Extensions.Options;
 namespace apitruck.Services;
 
+
 public interface IEmailSender
 {
   Task SendEmailAsync(string email, string subject, string message);
 }
+
+
 public class EmailSender : IEmailSender
 {
 

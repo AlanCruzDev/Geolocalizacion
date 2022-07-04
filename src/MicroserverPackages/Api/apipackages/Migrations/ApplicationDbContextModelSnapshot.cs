@@ -68,7 +68,14 @@ namespace apipackages.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Apellidos")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CodeVerify")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

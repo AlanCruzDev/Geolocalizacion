@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5fEcZTTQsKZvKOEXAhyJNLcL9yd4fnEPf06ezeoYHOWasxN07hR3Tv2tFbsXc70DouKy2AbtQwiUF4sgcA/wAg==",
+  "dgSpecHash": "XLOFY0oLhSGY1MPaXxA52BEmOK4piFB9AIiuBzEGDm1RLxxe0TcnpHSckEuxgJKWxZLvkCkEJtAmMPFJ1SRaNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverTrucks\\Api\\apitruck\\apitruck.csproj",
+  "projectFilePath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverTrucks\\Api\\apitruck\\apitruck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Allan\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -49,4 +49,9 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
   {
     throw new NotImplementedException();
   }
+
+  public virtual Task<string> RecoveryPassword(string correo)
+  {
+    throw new NotImplementedException();
+  }
 }

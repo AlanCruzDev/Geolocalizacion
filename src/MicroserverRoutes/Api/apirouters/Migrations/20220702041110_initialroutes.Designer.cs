@@ -11,8 +11,8 @@ using apirouters.Data;
 namespace apirouters.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220605004302_initial")]
-    partial class initial
+    [Migration("20220702041110_initialroutes")]
+    partial class initialroutes
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

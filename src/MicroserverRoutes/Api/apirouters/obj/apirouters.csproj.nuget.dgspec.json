@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverRoutes\\api\\apirouters\\apirouters.csproj": {}
+    "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverRoutes\\Api\\apirouters\\apirouters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverRoutes\\api\\apirouters\\apirouters.csproj": {
+    "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverRoutes\\Api\\apirouters\\apirouters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverRoutes\\api\\apirouters\\apirouters.csproj",
+        "projectUniqueName": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverRoutes\\Api\\apirouters\\apirouters.csproj",
         "projectName": "apirouters",
-        "projectPath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverRoutes\\api\\apirouters\\apirouters.csproj",
+        "projectPath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverRoutes\\Api\\apirouters\\apirouters.csproj",
         "packagesPath": "C:\\Users\\Allan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverRoutes\\api\\apirouters\\obj\\",
+        "outputPath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverRoutes\\Api\\apirouters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Allan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

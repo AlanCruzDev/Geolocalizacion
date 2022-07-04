@@ -4,7 +4,7 @@
 
 namespace apirouters.Migrations
 {
-    public partial class initial : Migration
+    public partial class initialroutes : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

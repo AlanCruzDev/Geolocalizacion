@@ -15,7 +15,9 @@ public class Employes{
   public string NumEmpleado {get; set;}
   public string Usuario {get; set;}
   public string password {get; set;}
-
+  public string CodeVerify {get; set;}
+  public bool Activo {get; set;}
+  
   public int Roles {get; set;}
   // propiedad de navegacion
   public List<DetailPackage> detailPackages {get; set;}

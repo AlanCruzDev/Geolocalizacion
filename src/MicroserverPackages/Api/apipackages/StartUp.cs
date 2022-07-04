@@ -78,6 +78,10 @@ public class StartUp
     });
 
     services.AddScoped<IUnitOfWork, UnitOfWork>();
+    // Servicios del Email
+    services.AddScoped<IEmailSender,EmailSender>();
+    services.Configure<EmailSenderOptions>(Configuration.GetSection("EmailSenderOptions"));
+
   }
 
   public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

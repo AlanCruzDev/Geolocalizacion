@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ILLcK3g9fXKjpmUbHldRtk/FEpUcC6Z/TPOAunsxhm+8Ag5lhpA2cwzhDtb+l93eL0Q/1amLZLGlZyblQNfIhA==",
+  "dgSpecHash": "PGDb/Ay7+wFEqhig0roGfGn/iKz1i7+k/tIxz+32as8AnpHBPq50aLHL5uY6VIO6Pt4xY0c+LGzlq41nLvjHYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj",
+  "projectFilePath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverPackages\\Api\\apipackages\\apipackages.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Allan\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -21,7 +21,7 @@
     "C:\\Users\\Allan\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.1\\microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.0\\microsoft.entityframeworkcore.design.6.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.1\\microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
-    "C:\\Users\\Allan\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.0\\microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
+    "C:\\Users\\Allan\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.1\\microsoft.entityframeworkcore.sqlserver.6.0.1.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.0\\microsoft.entityframeworkcore.tools.6.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",

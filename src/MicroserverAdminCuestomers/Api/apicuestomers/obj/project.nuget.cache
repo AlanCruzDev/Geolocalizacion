@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kn9FsTKxzmvFO+Y5OdgpYFMas16XJ//yornwACacN+10Dsk6pRtUh+3ivRt7/HQYGfaM06kwbwsXACeOKgdX8A==",
+  "dgSpecHash": "wiXZo1ETgGwVbznLfZTdpcTzCcNZsfj8dQIQ2AnXkAU1QMkIvErV3rZMeqFF2kkX8/bWlv208IlIc4n0hWZZmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverAdminCuestomers\\Api\\apicuestomers\\apicuestomers.csproj",
+  "projectFilePath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverAdminCuestomers\\Api\\apicuestomers\\apicuestomers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Allan\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

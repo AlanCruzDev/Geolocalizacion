@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DsxrKA1r32FLto8eJ3hnbm0CVc6z4c0EuNBEY9T7AHVOZXWdOGISQ8a5/nHKu1LUy9MMTMaM8s263TIhbCa5ug==",
+  "dgSpecHash": "vDdwp8IT2FGIWytyQOXdfTCcMVk+2hu5kvEAqsIZHqw3xr9mEjzVJVaARGplU6EF5cWpLDG+ii0rYAD62QRzqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Allan\\Documents\\ProyectoPaqueteria\\src\\MicroserverRoutes\\api\\apirouters\\apirouters.csproj",
+  "projectFilePath": "C:\\Users\\Allan\\OneDrive\\Documentos\\Proyecto\\ProyectoPaqueteria\\src\\MicroserverRoutes\\Api\\apirouters\\apirouters.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Allan\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Allan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
