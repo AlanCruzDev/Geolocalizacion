@@ -48,7 +48,7 @@ public class GenericRepository<T> : IGenericRepository<T>  where T : class{
     throw new NotImplementedException();
   }
 
-  public  virtual Task<IEnumerable<T>> All()
+  public virtual Task<IEnumerable<T>> All()
   {
     throw new NotImplementedException();
   }

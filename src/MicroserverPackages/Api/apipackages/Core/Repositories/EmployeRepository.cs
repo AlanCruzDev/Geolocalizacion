@@ -21,6 +21,11 @@ public class EmployeRepository : GenericRepository<Employes>, IEmploye
   public EmployeRepository(ApplicationDbContext context, ILogger logger, IDataProtector dataProtector, IMapper mapper) : base(context, logger, dataProtector, mapper)
   {
   }
+  public override async Task<IEnumerable<Employes>> All()
+  {
+      var result = await dbSet.ToListAsync();
+      return result;
+  }
 
   public override async Task<bool> Add(Employes entity)
   {
@@ -150,5 +155,18 @@ public class EmployeRepository : GenericRepository<Employes>, IEmploye
     }
     return valor;
   }
+
+  public async override Task<bool> Delete(int id)
+  {
+      var exite = await dbSet.AnyAsync(x => x.Id == id);
+      if(!exite){
+        return false;
+      }
+      dbSet.Remove(new Employes(){
+        Id=id
+      });
+      return true;
+  }
+  
 
 }

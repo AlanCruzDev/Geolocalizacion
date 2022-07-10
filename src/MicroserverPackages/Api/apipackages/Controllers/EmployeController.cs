@@ -132,7 +132,23 @@ public class EmployeController : ControllerBase
     };
     
   }
-
-
+  [HttpGet]
+  public async Task<ActionResult> GetEmployes(){
+    IEnumerable<Employes> result = await _unitOfWork.Employe.All();
+    
+    
+    return Ok(result);
+  }
+   [HttpDelete("{id}")]
+  public async Task<ActionResult> DeleteEmploye(int id){
+    bool result = await _unitOfWork.Employe.Delete(id);
+    await _unitOfWork.CompleteAsync();
+    if(result){
+      return Ok();
+    }
+    return new JsonResult("Fail"){
+      StatusCode=404
+    };
+  }
 
 }

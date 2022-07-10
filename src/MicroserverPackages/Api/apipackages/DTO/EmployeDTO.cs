@@ -8,5 +8,7 @@ public class EmployesDTO{
   public string Usuario {get; set;}
   public string password {get; set;}
   public string rol {get; set;}
+  public string  CodeVerify {get; set;}
+  public bool  Activo {get; set;}
 
 }
