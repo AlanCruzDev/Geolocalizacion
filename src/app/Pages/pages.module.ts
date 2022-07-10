@@ -11,6 +11,11 @@ import {PackaListComponent} from './packa-list/packa-list.component';
 import {RegisterTruckComponent} from './register-truck/register-truck.component';
 import {TruckComponent} from './truck/truck.component';
 import {RegisterInchargeComponent} from './register-incharge/register-incharge.component';
+import {CreateemployesComponent} from './createemployes/createemployes.component';
+import {NewEmployeComponent} from './new-employe/new-employe.component';
+import {ListEmployesComponent} from './list-employes/list-employes.component';
+
+
 
 
 @NgModule({
@@ -22,7 +27,10 @@ import {RegisterInchargeComponent} from './register-incharge/register-incharge.c
     PackaListComponent,
     RegisterTruckComponent,
     TruckComponent,
-    RegisterInchargeComponent
+    RegisterInchargeComponent,
+    CreateemployesComponent,
+    NewEmployeComponent,
+    ListEmployesComponent
   ],
   imports: [
     CommonModule,

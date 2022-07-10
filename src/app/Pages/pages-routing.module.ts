@@ -5,14 +5,12 @@ import {PackageComponent} from './Package/package.component';
 import {AssignPackagesComponent} from '../Pages/assign-packages/assign-packages.component';
 import {TruckComponent} from './truck/truck.component';
 import {routingtruck} from './pages-routingchildren-truck.module';
-
-
-
+import {CreateemployesComponent} from './createemployes/createemployes.component';
+import {routesemploye} from './pages-routinghijasemploye.module';
 
 /*Importamos la rutas Hijas */
 import {routespackages} from './pages-routinghijas.module';
 import { GuardGuard } from '../guard.guard';
-
 
 
 const routes: Routes = [
@@ -20,6 +18,7 @@ const routes: Routes = [
   {path:'packages', component:PackageComponent},
   {path:'assign/packages', component:AssignPackagesComponent, children:routespackages},
   {path:'create', component:TruckComponent, children:routingtruck},
+  {path:'employe/create', component:CreateemployesComponent, children:routesemploye},
   {path:'**', redirectTo:'map'}
 ];
 

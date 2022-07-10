@@ -10,10 +10,8 @@
           <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['packages']"><i class = "icon ion-md-document mr-2"></i>Nuevo Paquete</a>
           <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['assign/packages']"><i class = "icon ion-md-document mr-2"></i>Asignar Paquete</a>
           <a class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['create']"><i class = "icon ion-md-document mr-2"></i>Registro  Camion</a>
-          <a *ngIf="rol"  class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['create']"><i class = "icon ion-md-document mr-2"></i>Registro Empleado</a>
-          
-          
-          
+          <a *ngIf="rol"  class="list-group-item list-group-item-action bg-azul d-block p-3 text-light" [routerLink]="['employe/create']"><i class = "icon ion-md-document mr-2"></i>Registro Empleado</a>
+
           <button class="btn btn-primary w-25" (click)="logout()">Salir</button>
       </div>
   </div>
